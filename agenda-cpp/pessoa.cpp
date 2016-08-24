@@ -2,43 +2,31 @@
 #include <string>
 
 using namespace std;
+
 Pessoa::Pessoa(){
  nome= "";
- idade="";
  telefone="";
 }
 
 
-Pessoa::Pessoa(string nome, string idade,string telefone){
-
-this->nome = nome;
-this->idade=idade;
-this->telefone = telefone;
+Pessoa::Pessoa(string nome, string telefone){
+	this->nome = nome;
+	this->telefone = telefone;
 }
 
 string Pessoa::getNome(){
-
-return nome;
+	return nome;
 }
 
 
 void Pessoa::setNome (string nome){
-
-    this->nome=nome;}
-
-string Pessoa::getIdade(){
-        return idade;
-
+	this->nome = nome;
 }
 
-void Pessoa:: setIdade( string idade){
-
-this->idade=idade;}
-
 string Pessoa:: getTelefone(){
- return telefone;
+	return telefone;
 }
 
 void Pessoa::setTelefone( string telefone){
-this->telefone=telefone;
+	this->telefone = telefone;
 } 

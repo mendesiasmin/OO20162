@@ -13,19 +13,16 @@ class Pessoa{
 private:
 
            string nome;
-           string idade;
            string telefone;
 
 public:
 
           Pessoa();
-          Pessoa(string nome,string idade,string telefone);
-          string getIdade();
-           void setIdade(string idade);
+          Pessoa(string nome, string telefone);
           string getNome();
           void setNome(string nome);
           string getTelefone();
-          void setTelefone ( string telefone);
+          void setTelefone (string telefone);
 };
 #endif
 
