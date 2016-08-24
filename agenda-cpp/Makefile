@@ -1,5 +1,5 @@
 all: pessoa.o pessoaFisica.o pessoaJuridica.o main.o
-	g++ main pessoa.o pessoaFisica.o pessoaJuridica.o main.o
+	g++ -o main pessoa.o pessoaFisica.o pessoaJuridica.o main.o
 
 pessoa.o: pessoa.cpp pessoa.hpp
 	g++ -c pessoa.cpp
@@ -10,7 +10,7 @@ pessoaFisica.o: pessoaFisica.cpp pessoaFisica.hpp
 pessoaJuridica.o: pessoaJuridica.cpp pessoaJuridica.hpp
 	g++ -c pessoaJuridica.cpp
 
-main.o: main.cpp pessoa.hpp
+main.o: main.cpp
 	g++ -c main.cpp
 
 clean:
